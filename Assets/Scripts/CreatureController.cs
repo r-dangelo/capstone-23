@@ -75,7 +75,7 @@ public class CreatureController : MonoBehaviour
     public SampleTest sampleTest;
 
     [Header("Miscellaneous")]
-    [SerializeField] AnimationClip petAnimation;
+    [SerializeField] Animation petAnimation;
 
     int soundTestCount = 0;
 
@@ -120,5 +120,11 @@ public class CreatureController : MonoBehaviour
     public void doMRITest()
     {
 
+    }
+
+    public void pet()
+    {
+        Debug.Log("pet");
+        // petAnimation.Play();
     }
 }
