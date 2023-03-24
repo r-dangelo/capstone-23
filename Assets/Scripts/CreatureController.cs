@@ -117,11 +117,6 @@ public class CreatureController : MonoBehaviour
 
     }
 
-    public void doMRITest()
-    {
-
-    }
-
     public void pet()
     {
         Debug.Log("pet");

@@ -7,6 +7,12 @@ public class MainController : MonoBehaviour
     [SerializeField] CreatureController[] creatures;
     [SerializeField] CreatureController currentCreature;
 
+    [Header("Panels")]
+    [SerializeField] public GameObject mainPanel;
+    [SerializeField] public GameObject hearingTestPanel;
+    [SerializeField] public GameObject xrayTestPanel;
+    [SerializeField] public GameObject sampleTestPanel;
+
     int index = 0;
 
     private void Start()
@@ -39,10 +45,5 @@ public class MainController : MonoBehaviour
     public void sampleTestCorrectCreature()
     {
         currentCreature.doSampleTest();
-    }
-
-    public void mriCorrectCreature()
-    {
-        currentCreature.doMRITest();
     }
 }
