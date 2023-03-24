@@ -16,13 +16,15 @@ public class state_testHearing : State
     public override void Enter()
     {
         Debug.Log("STATE: Hearing Test");
-        controller.hearingTestPanel.SetActive(true);
+        controller.panels.hearingTestPanel.SetActive(true);
+        controller.moveCreature("state_testHearing");
     }
 
     public override void Exit()
     {
         // record info
-        controller.hearingTestPanel.SetActive(false);
+        controller.panels.hearingTestPanel.SetActive(false);
+        controller.resetCreature();
     }
 
     public override void Tick()

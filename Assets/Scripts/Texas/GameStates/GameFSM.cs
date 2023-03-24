@@ -2,11 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum States
-{
-    Setup, Main, HearingTest, XRayTest, MicroscopeTest
-};
-
 [RequireComponent(typeof(MainController))]
 public class GameFSM : StateMachineMB
 {
@@ -34,8 +29,9 @@ public class GameFSM : StateMachineMB
         base.ChangeState(setup);
     }
 
-    public new void ChangeState(State newState)
-    {
-        base.ChangeState(newState);
-    }
+    public void ChangeToSetup() { ChangeState(setup); }
+    public void ChangeToMain() { ChangeState(main); }
+    public void ChangeToHearingTest() { ChangeState(hearingTest); }
+    public void ChangeToXRayTest() { ChangeState(xrayTest); }
+    public void ChangeToMicroscope() { ChangeState(microscopeTest); }
 }

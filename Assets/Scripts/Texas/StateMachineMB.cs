@@ -20,7 +20,7 @@ public class StateMachineMB : MonoBehaviour
     {
         transitioning = true;
         CurrState?.Exit();
-        StorePreviousState(CurrState, newState);
+        StorePreviousState(newState);
 
         CurrState = newState;
 
@@ -28,7 +28,7 @@ public class StateMachineMB : MonoBehaviour
         transitioning = false;
     }
 
-    private void StorePreviousState(State currentState, State newState)
+    private void StorePreviousState(State newState)
     {
         if (newState == null && newState != null) {
             PrevState = newState;

@@ -15,14 +15,14 @@ public class state_Main : State
 
     public override void Enter()
     {
-        base.Enter();
-        controller.mainPanel.SetActive(true);
         Debug.Log("STATE: Main");
+        controller.panels.mainPanel.SetActive(true);
+        controller.moveCreature("state_Main");
     }
 
     public override void Exit()
     {
-        controller.mainPanel.SetActive(false);
+        controller.panels.mainPanel.SetActive(false);
         base.Exit();
     }
 

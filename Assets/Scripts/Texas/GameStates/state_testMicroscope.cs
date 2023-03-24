@@ -15,15 +15,15 @@ public class state_testMicroscope : State
 
     public override void Enter()
     {
-        base.Enter();
         Debug.Log("STATE: Microscope Test");
-        controller.sampleTestPanel.SetActive(true);
+        controller.panels.sampleTestPanel.SetActive(true);
+        controller.moveCreature("state_testMicroscope");
     }
 
     public override void Exit()
     {
-        base.Exit();
-        controller.sampleTestPanel.SetActive(false);
+        // record info
+        controller.panels.sampleTestPanel.SetActive(false);
     }
 
     public override void Tick()

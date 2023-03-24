@@ -8,7 +8,8 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum soundReactions{
+public enum soundReactions
+{
     None, Positive, Negative
 }
 public enum kingdoms{
@@ -41,9 +42,9 @@ public class SoundTest
     public soundReactions frequency2Reaction;
     public soundReactions frequency3Reaction;
 
-    [Header("Animations")]
-    public AnimationClip positiveReaction;
-    public AnimationClip negativeReaction;
+    [Header("Sprites")]
+    public Sprite positiveReaction;
+    public Sprite negativeReaction;
 }
 
 [System.Serializable]
@@ -77,33 +78,38 @@ public class CreatureController : MonoBehaviour
     [Header("Miscellaneous")]
     [SerializeField] Animation petAnimation;
 
-    int soundTestCount = 0;
+    Sprite defaultImage;
 
-    public void doSoundTest()
+    private void Start()
     {
-        soundTestCount++;
-        soundReactions frequencyReaction = soundReactions.None;
-        if(soundTestCount == 1) { frequencyReaction = soundTest.frequency1Reaction; }
-        else if(soundTestCount == 2) { frequencyReaction = soundTest.frequency2Reaction; }
-        else if(soundTestCount == 3) { frequencyReaction= soundTest.frequency3Reaction; }
+        defaultImage = gameObject.GetComponent<Image>().sprite;
+    }
 
-        switch (frequencyReaction) {
-            case soundReactions.None:
-                Debug.Log("None");
+    public void doSoundTest(int frequencyNum)
+    {
+        soundReactions reaction = soundReactions.None;
+        switch (frequencyNum) {
+            case 1:
+                reaction = soundTest.frequency1Reaction;
                 break;
-            case soundReactions.Positive:
-                Debug.Log("positive");
-                // soundTest.positiveReaction.GetComponent<Animation>().Play();
+            case 2:
+                reaction = soundTest.frequency2Reaction;
                 break;
-            case soundReactions.Negative:
-                Debug.Log("negative");
-                // soundTest.negativeReaction.GetComponent<Animation>().Play();
+            case 3:
+                reaction = soundTest.frequency3Reaction;
                 break;
         }
-        Debug.Log(soundTestCount);
 
-        if (soundTestCount == 3) {
-            soundTestCount = 0;
+        switch (reaction) {
+            case soundReactions.None:
+                gameObject.GetComponent<Image>().sprite = defaultImage;
+                break;
+            case soundReactions.Positive:
+                gameObject.GetComponent<Image>().sprite = soundTest.positiveReaction;
+                break;
+            case soundReactions.Negative:
+                gameObject.GetComponent<Image>().sprite = soundTest.negativeReaction;
+                break;
         }
     }
 
@@ -121,5 +127,15 @@ public class CreatureController : MonoBehaviour
     {
         Debug.Log("pet");
         // petAnimation.Play();
+    }
+
+    public void moveCreature(Vector3 pos)
+    {
+        gameObject.GetComponent<RectTransform>().localPosition = pos;
+    }
+
+    public void resetCreature()
+    {
+        gameObject.GetComponent<Image>().sprite = defaultImage;
     }
 }

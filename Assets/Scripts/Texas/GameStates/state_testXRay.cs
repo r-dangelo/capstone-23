@@ -17,13 +17,13 @@ public class state_testXRay : State
     {
         base.Enter();
         Debug.Log("STATE: XRay Test");
-        controller.xrayTestPanel.SetActive(true);
+        controller.panels.xrayTestPanel.SetActive(true);
+        controller.moveCreature("state_testXRay");
     }
 
     public override void Exit()
     {
-        base.Exit();
-        controller.xrayTestPanel.SetActive(true);
+        controller.panels.xrayTestPanel.SetActive(false);
     }
 
     public override void Tick()
