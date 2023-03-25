@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(MainController))]
+[RequireComponent(typeof(JournalTracker))]
 public class GameFSM : StateMachineMB
 {
     private MainController controller;
+    private JournalTracker journal;
     
     // Members of the Union (States)
     public state_Setup setup { get; private set; }
@@ -19,9 +21,9 @@ public class GameFSM : StateMachineMB
         controller = GetComponent<MainController>();
         setup = new state_Setup(this, controller);
         main = new state_Main(this, controller);
-        hearingTest = new state_testHearing(this, controller);
-        xrayTest = new state_testXRay(this, controller);
-        microscopeTest = new state_testMicroscope(this, controller);
+        hearingTest = new state_testHearing(this, controller, journal);
+        xrayTest = new state_testXRay(this, controller, journal);
+        microscopeTest = new state_testMicroscope(this, controller, journal);
     }
 
     private void Start()

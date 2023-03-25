@@ -57,11 +57,20 @@ public class XRayTest
 }
 
 [System.Serializable]
-// find some way of associating images with a value for comparison
 public class SampleTest
 {
-    [SerializeField] Image controlImage;
-    [SerializeField] Image[] comparisonImages;
+    public string moreCorrectInformation;
+    public string correctInformation;
+    public string unhelpfulInformation;
+}
+
+[System.Serializable]
+public struct SampleTestImages
+{
+    public Sprite controlImage;
+    public Sprite topImage;
+    public Sprite bottomImage;
+    public bool isTopImageCorrect;
 }
 
 public class CreatureController : MonoBehaviour
@@ -73,16 +82,31 @@ public class CreatureController : MonoBehaviour
     [Header("Tests")]
     public SoundTest soundTest;
     public XRayTest xRayTest;
-    public SampleTest sampleTest;
+    public SampleTestImages[] sampleTest;
 
     [Header("Miscellaneous")]
     [SerializeField] Animation petAnimation;
 
     Sprite defaultImage;
+    int sampleTestIndex;
+    int sampleTestPoints;
+    List<Image> buttonsToChange;
+
+    public bool isPettable { get; set; }
 
     private void Start()
     {
         defaultImage = gameObject.GetComponent<Image>().sprite;
+        isPettable = true;
+
+        GameObject[] images = GameObject.FindGameObjectsWithTag("sampleTestImage");
+        foreach(GameObject image in images)
+        {
+            if (image.gameObject.GetComponent<Image>())
+            {
+                buttonsToChange.Add(image.gameObject.GetComponent<Image>());
+                Debug.Log(nameof(image));            }
+        }
     }
 
     public void doSoundTest(int frequencyNum)
@@ -118,15 +142,43 @@ public class CreatureController : MonoBehaviour
 
     }
 
-    public void doSampleTest()
+    public void doSampleTest(int buttonNumber)
+    {
+        if (buttonNumber == 1 && sampleTest[sampleTestIndex].isTopImageCorrect)
+        {
+            sampleTestPoints++;
+        }
+        if (sampleTestIndex == 2) { endTest(); return; }
+        changeImages(sampleTest);
+    }
+
+    void endTest()
+    {
+        switch (sampleTestPoints)
+        {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+        }
+    }
+
+    void changeImages(SampleTestImages[] imgs)
     {
 
     }
 
     public void pet()
     {
-        Debug.Log("pet");
-        // petAnimation.Play();
+        if (isPettable)
+        {
+            Debug.Log("pet");
+            // petAnimation.Play();
+        }
     }
 
     public void moveCreature(Vector3 pos)
