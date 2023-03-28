@@ -47,6 +47,8 @@ public class MainController : MonoBehaviour
 
     private void Start()
     {
+        creatures = new List<CreatureController>();
+        
         GameObject[] creatureGO = GameObject.FindGameObjectsWithTag("Creature");
         foreach (GameObject obj in creatureGO)
         {
@@ -55,9 +57,10 @@ public class MainController : MonoBehaviour
                 creatures.Add(obj.gameObject.GetComponent<CreatureController>());
             }
         }
+
         currentCreature = creatures[0];
 
-        locations.Add("state_Main", location.mainLocation);
+        locations.Add(nameof(state_Main), location.mainLocation);
         locations.Add(nameof(state_testHearing), location.soundLocation);
         locations.Add(nameof(state_testXRay), location.xrayLocation);
         locations.Add(nameof(state_testMicroscope), location.microscopeLocation);
