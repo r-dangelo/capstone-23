@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Creature
-  - sampleTestImage
+  - sampleControl
+  - sampleTop
+  - sampleBottom
   layers:
   - Default
   - TransparentFX

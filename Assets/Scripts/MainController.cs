@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Panels
@@ -28,6 +29,14 @@ public class Sounds
     public AudioClip buttonClick;
 }
 
+[System.Serializable]
+public class SampleTestController
+{
+    public Image controlImage;
+    public Image topImage;
+    public Image bottomImage;
+}
+
 public class MainController : MonoBehaviour
 {
     List<CreatureController> creatures;
@@ -41,6 +50,9 @@ public class MainController : MonoBehaviour
 
     [Header("Sounds")]
     public Sounds sound;
+
+    [Header("Sample Test Image GameObjects")]
+    public SampleTestController sampleTestLocations;
 
     int index = 0;
     IDictionary<string, RectTransform> locations = new Dictionary<string, RectTransform>();
@@ -83,14 +95,19 @@ public class MainController : MonoBehaviour
         currentCreature.doSoundTest(frequencyNum);
     }
 
-    public void xrayTestCorrectCreature()
+    public void xrayTestCorrectCreature(int buttonNumber)
     {
-        currentCreature.doXRayTest();
+        currentCreature.doXRayTest(buttonNumber);
     }
 
     public void sampleTestCorrectCreature(int buttonNumber)
     {
         currentCreature.doSampleTest(buttonNumber);
+        Sprite[] nextSprites = new Sprite[3];
+        nextSprites = currentCreature.getNextImages();
+        sampleTestLocations.controlImage.sprite = nextSprites[0];
+        sampleTestLocations.topImage.sprite = nextSprites[1];
+        sampleTestLocations.bottomImage.sprite = nextSprites[2];
     }
 
     public void moveCreature(string StateNameMessy)

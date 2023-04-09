@@ -2,8 +2,8 @@ using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Net;
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -48,12 +48,19 @@ public class SoundTest
 }
 
 [System.Serializable]
+public struct XRayInfo
+{
+    [Range(1, 12)]
+    public int importantSection;
+    public string infoGained;
+}
+
+[System.Serializable]
 public class XRayTest
 {
     [Tooltip("Check this if the creature is invertebrate")]
-    [SerializeField] bool hasExoskeleton;
-    [Range(1,20)]
-    [SerializeField] int importantSection;
+    public bool hasExoskeleton;
+    public XRayInfo[] ImportantSections;
 }
 
 [System.Serializable]
@@ -88,9 +95,8 @@ public class CreatureController : MonoBehaviour
     [SerializeField] Animation petAnimation;
 
     Sprite defaultImage;
-    int sampleTestIndex;
-    int sampleTestPoints;
-    List<Image> buttonsToChange;
+    int sampleTestIndex = 0;
+    int sampleTestPoints = 0;
 
     public bool isPettable { get; set; }
 
@@ -98,15 +104,6 @@ public class CreatureController : MonoBehaviour
     {
         defaultImage = gameObject.GetComponent<Image>().sprite;
         isPettable = true;
-
-        GameObject[] images = GameObject.FindGameObjectsWithTag("sampleTestImage");
-        foreach(GameObject image in images)
-        {
-            if (image.gameObject.GetComponent<Image>())
-            {
-                buttonsToChange.Add(image.gameObject.GetComponent<Image>());
-                Debug.Log(nameof(image));            }
-        }
     }
 
     public void doSoundTest(int frequencyNum)
@@ -137,19 +134,24 @@ public class CreatureController : MonoBehaviour
         }
     }
 
-    public void doXRayTest()
+    public void doXRayTest(int buttonNumber)
     {
 
     }
 
     public void doSampleTest(int buttonNumber)
     {
-        if (buttonNumber == 1 && sampleTest[sampleTestIndex].isTopImageCorrect)
-        {
-            sampleTestPoints++;
+        try {
+            SampleTestImages tester = sampleTest[sampleTestIndex];
+            if (buttonNumber == 1 && tester.isTopImageCorrect) {
+                sampleTestPoints++;
+            }
+            if (sampleTestIndex == 2) { endTest(); return; }
         }
-        if (sampleTestIndex == 2) { endTest(); return; }
-        changeImages(sampleTest);
+        catch (IndexOutOfRangeException e) {
+            Debug.Log(e + " Test Over, do something");
+        }
+        
     }
 
     void endTest()
@@ -165,11 +167,20 @@ public class CreatureController : MonoBehaviour
             case 3:
                 break;
         }
+
     }
 
-    void changeImages(SampleTestImages[] imgs)
+    public Sprite[] getNextImages()
     {
-
+        if (sampleTestIndex < sampleTest.Length) {
+            Sprite[] nextImages = new Sprite[3];
+            nextImages[0] = sampleTest[sampleTestIndex].controlImage;
+            nextImages[1] = sampleTest[sampleTestIndex].topImage;
+            nextImages[2] = sampleTest[sampleTestIndex].bottomImage;
+            sampleTestIndex++;
+            return nextImages;
+        }
+        return null;
     }
 
     public void pet()
