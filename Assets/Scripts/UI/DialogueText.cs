@@ -7,7 +7,7 @@ public class DialogueText : MonoBehaviour
 {
     TextMeshPro text;
 
-    IEnumerator Start()
+    /*IEnumerator Start()
     {
         text = gameObject.GetComponent<TextMeshPro>();
 
@@ -23,6 +23,6 @@ public class DialogueText : MonoBehaviour
             text.maxVisibleCharacters = visibleCount;
             counter++;
             yield return new WaitForSeconds(0.5f);
-        }*/
-    }
+        }
+    }*/
 }

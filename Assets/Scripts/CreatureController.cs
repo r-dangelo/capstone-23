@@ -28,10 +28,10 @@ public enum orders{
 [System.Serializable]
 public class Taxa
 {
-    [SerializeField] kingdoms kingdom;
-    [SerializeField] phylums phylum;
-    [SerializeField] classes classs;
-    [SerializeField] orders order;
+    public kingdoms kingdom;
+    public phylums phylum;
+    public classes classs;
+    public orders order;
 }
 
 [System.Serializable]

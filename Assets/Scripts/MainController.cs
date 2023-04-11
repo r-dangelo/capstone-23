@@ -1,7 +1,5 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,7 +38,7 @@ public class SampleTestController
 public class MainController : MonoBehaviour
 {
     List<CreatureController> creatures;
-    [SerializeField] CreatureController currentCreature;
+    public CreatureController currentCreature;
 
     [Header("Panels")]
     public Panels panels;
@@ -56,6 +54,7 @@ public class MainController : MonoBehaviour
 
     int index = 0;
     IDictionary<string, RectTransform> locations = new Dictionary<string, RectTransform>();
+    public int score = 0;
 
     private void Start()
     {
