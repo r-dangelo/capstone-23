@@ -124,4 +124,9 @@ public class MainController : MonoBehaviour
     {
         currentCreature.isPettable = newPettability;
     }
+
+    public void quitGame()
+    {
+        Application.Quit();
+    }
 }
