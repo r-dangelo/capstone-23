@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9688f2aa1b4765643b7ffd7de51c83e6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Made in China
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8cce822b5250f5c4a8b269f903e3ae26, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
