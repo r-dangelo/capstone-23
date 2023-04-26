@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 
 public class Classify : MonoBehaviour
 {
+    [SerializeField] TMP_Text scoreText;
+    [SerializeField] GameObject endPanel;
     kingdoms kingdom;
     phylums phylum;
     classes clas;
@@ -41,6 +44,8 @@ public class Classify : MonoBehaviour
         if (checker.order == order) { score += 1; }
 
         gameObject.GetComponent<MainController>().score = score;
-        print(gameObject.GetComponent<MainController>().score);
+        endPanel.SetActive(true);
+        scoreText.SetText("You got " + score + "/4 correct.\n" + "The correct answers were:\n" +
+                           checker.kingdom + " " + checker.phylum + " " + checker.classs + " " + checker.order + ".");
     }
 }
