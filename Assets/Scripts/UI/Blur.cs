@@ -14,6 +14,7 @@ public class Blur : MonoBehaviour
     }
 
     // Completely Transparent = clear image
+    // 
     public void changeBlur()
     {
         Color temp = this.GetComponent<Image>().color;
