@@ -10,13 +10,17 @@ public class UIHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        hoverObject.SetActive(true);
-        hoverText.SetActive(true);
+        if(hoverObject != null)
+            hoverObject.SetActive(true);
+        if (hoverText != null)
+            hoverText.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        hoverObject.SetActive(false);
-        hoverText.SetActive(false);
+        if (hoverObject != null)
+            hoverObject.SetActive(false);
+        if (hoverText != null)
+            hoverText.SetActive(false);
     }
 }
