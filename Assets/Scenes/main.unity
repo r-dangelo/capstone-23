@@ -141,6 +141,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1858636939}
     m_Modifications:
+    - target: {fileID: 5092545675741316865, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5092545675778492156, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -149,9 +153,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToMain
       objectReference: {fileID: 0}
+    - target: {fileID: 5092545675904791879, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092545675941906371, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5092545676689332568, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
       propertyPath: m_Name
       value: pnl_soundTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092545676689332568, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5092545676689332569, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
       propertyPath: m_Pivot.x
@@ -236,6 +252,26 @@ PrefabInstance:
     - target: {fileID: 5092545676689332569, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092545676756089900, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092545676948834766, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 1642009697}
+    - target: {fileID: 5092545677486088493, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 1642009697}
+    - target: {fileID: 5092545677694095986, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092545677704882378, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 167cd84450170464b9e2cb14899c3a2c, type: 3}
@@ -534,6 +570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pnl_microscopeTest
       objectReference: {fileID: 0}
+    - target: {fileID: 8864275899154214064, guid: 3e9319b17fecbad4595a9dd8db8c6adf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8864275899154214065, guid: 3e9319b17fecbad4595a9dd8db8c6adf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -618,6 +658,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8864275899312081853, guid: 3e9319b17fecbad4595a9dd8db8c6adf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8864275899428511070, guid: 3e9319b17fecbad4595a9dd8db8c6adf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -625,6 +669,10 @@ PrefabInstance:
     - target: {fileID: 8864275899428511070, guid: 3e9319b17fecbad4595a9dd8db8c6adf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 8864275900034481031, guid: 3e9319b17fecbad4595a9dd8db8c6adf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e9319b17fecbad4595a9dd8db8c6adf, type: 3}
@@ -846,6 +894,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1858636939}
     m_Modifications:
+    - target: {fileID: 4474545353256713485, guid: 4fee017f6d41cf3408a66d8ee137a327, type: 3}
+      propertyPath: petSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d174bba4d4625046bd0d654bf968515, type: 3}
+    - target: {fileID: 4474545353256713485, guid: 4fee017f6d41cf3408a66d8ee137a327, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1642009694}
     - target: {fileID: 4474545354053502264, guid: 4fee017f6d41cf3408a66d8ee137a327, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
