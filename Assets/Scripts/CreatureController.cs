@@ -92,7 +92,8 @@ public class CreatureController : MonoBehaviour
     public SampleTestImages[] sampleTest;
 
     [Header("Miscellaneous")]
-    [SerializeField] Animation petAnimation;
+    [SerializeField] AudioClip petSound;
+    [SerializeField] MainController controller;
 
     Sprite defaultImage;
     int sampleTestIndex = 0;
@@ -187,8 +188,9 @@ public class CreatureController : MonoBehaviour
     {
         if (isPettable)
         {
-            Debug.Log("pet");
-            // petAnimation.Play();
+            AudioSource source = controller.GetComponent<AudioSource>();
+            source.clip = petSound;
+            source.Play();
         }
     }
 

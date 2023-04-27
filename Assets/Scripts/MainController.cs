@@ -25,6 +25,7 @@ public class Locations
 public class Sounds
 {
     public AudioClip buttonClick;
+    public AudioClip cancelClick;
 }
 
 [System.Serializable]
