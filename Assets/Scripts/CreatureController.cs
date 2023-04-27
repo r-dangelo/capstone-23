@@ -22,7 +22,7 @@ public enum classes{
     Reptilia, Mammalia, Arachnida, Malacostraca, New
 }
 public enum orders{
-    Decapoda, New
+    Decapoda, New, Carnivora
 }
 
 [System.Serializable]
