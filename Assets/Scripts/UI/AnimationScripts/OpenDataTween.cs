@@ -11,8 +11,6 @@ public class OpenDataTween : MonoBehaviour
     [SerializeField] public float openWidth;
     [SerializeField] public float openHeight;
 
-    [SerializeField] public float yDist;
-    [SerializeField] public float xDist;
     [SerializeField] public float duration;
     [SerializeField] public float closeDuration;
 
@@ -25,12 +23,16 @@ public class OpenDataTween : MonoBehaviour
 
     public void Move()
     {
-        SwitchTog();
+        if(this.gameObject.activeSelf)
+        {
+            SwitchTog();
 
-        if (!tog)
-            Close();
-        else if (tog)
-            Open();
+            if (!tog)
+                Close();
+            else if (tog)
+                Open();
+        }
+
     }
 
     public void Open()
