@@ -33,8 +33,10 @@ public class ClassifyNav : MonoBehaviour
                 if(nextTaxa.transform.GetChild(i).gameObject.activeSelf)
                     nextTaxa.transform.GetChild(i).GetComponent<OpenDataTween>().Open();
 
+
+        
         if (nextTog != null)
-          backBtnScript.MoveBackBtn(nextTog);
+              backBtnScript.MoveBackBtn(nextTog);
 
     }
 
@@ -48,6 +50,9 @@ public class ClassifyNav : MonoBehaviour
                     for (int x = 0; x<otherTaxa[i].transform.childCount; x++)
                         if(otherTaxa[i].transform.GetChild(x).gameObject.activeSelf)
                             otherTaxa[i].transform.GetChild(x).GetComponent<OpenDataTween>().Close();
+        backBtnScript.SetCloseTog(parentTog);
+        //if (nextTog.GetComponent<ClassifyNav>().nextTog != null)
+        // backBtnScript.MoveBackBtn(nextTog.GetComponent<ClassifyNav>().nextTog);
 
     }
 

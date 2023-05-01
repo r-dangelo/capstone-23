@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class ClassifyBackBtn : MonoBehaviour
 {
-    [SerializeField] public GameObject backBtn;
 
     private GameObject prevTog;
+    private GameObject closeTog;
 
     public void SetAsPrevToggle(GameObject previous)
     {
@@ -19,16 +19,23 @@ public class ClassifyBackBtn : MonoBehaviour
         return prevTog;
     }
 
+    public void SetCloseTog(GameObject togToClose)
+    {
+        closeTog = togToClose;
+    }
+
     public void MoveBackBtn(GameObject newPos)
     {
-        backBtn.transform.position = new Vector3(backBtn.transform.position.x,newPos.transform.position.y, backBtn.transform.position.z);
+        this.transform.position = new Vector3(this.transform.position.x,newPos.transform.position.y, this.transform.position.z);
 
     }
 
     public void PressBackBtn()
     {
-        MoveBackBtn(prevTog);
-        prevTog.GetComponent<Toggle>().isOn = true;
+        //MoveBackBtn(prevTog);
+        //prevTog.GetComponent<ClassifyNav>().ProgressClassification();
+        closeTog.GetComponent<ClassifyNav>().CloseNextBranch();
+
     }
 
 }
