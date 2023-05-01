@@ -1199,6 +1199,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c1f2e51a4d3b1a46a56a85c1aa143a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anamalia: 0
+  fungi: 0
+  chordata: 0
+  arthropoda: 0
+  reptilia: 0
+  mammalia: 0
+  arachnida: 0
+  malacostraca: 0
+  decapoda: 0
+  carnivora: 0
 --- !u!114 &1642009696
 MonoBehaviour:
   m_ObjectHideFlags: 0
