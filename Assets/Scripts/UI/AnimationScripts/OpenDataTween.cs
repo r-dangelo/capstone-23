@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class OpenDataTween : MonoBehaviour
 {
-    [SerializeField] public GameObject parentToggle;
-
     [SerializeField] public GameObject content;
 
     [SerializeField] public float openWidth;
@@ -58,7 +56,7 @@ public class OpenDataTween : MonoBehaviour
     public IEnumerator WaitForAnim(float duration)
     {
         yield return new WaitForSeconds(duration);
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
         //this.gameObject.transform.position = new Vector2(155,32);
         //LeanTween.size(this.GetComponent<RectTransform>(), new Vector2(210, 150), 0);
     }
