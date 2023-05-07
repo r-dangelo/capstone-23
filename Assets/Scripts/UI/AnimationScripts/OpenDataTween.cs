@@ -53,6 +53,30 @@ public class OpenDataTween : MonoBehaviour
         StartCoroutine(WaitForAnim(duration));
     }
 
+    public void OpenChildren()
+    {
+        if(this.gameObject.activeSelf)
+            for (int i = 0; i < this.transform.childCount; i++)
+                if (this.transform.GetChild(i).gameObject.activeSelf)
+                    this.transform.GetChild(i).GetComponent<OpenDataTween>().Open();
+    }
+
+    public void CloseChildren()
+    {
+        if (this.gameObject.activeSelf)
+            for (int i = 0; i < this.transform.childCount; i++)
+                if (this.transform.GetChild(i).gameObject.activeSelf)
+                    this.transform.GetChild(i).GetComponent<OpenDataTween>().Close();
+    }
+
+    public void MoveChildren()
+    {
+        if (this.gameObject.activeSelf)
+            for (int i = 0; i < this.transform.childCount; i++)
+                if (this.transform.GetChild(i).gameObject.activeSelf)
+                    this.transform.GetChild(i).GetComponent<OpenDataTween>().Move();
+    }
+
     public IEnumerator WaitForAnim(float duration)
     {
         yield return new WaitForSeconds(duration);
