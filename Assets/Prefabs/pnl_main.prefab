@@ -663,7 +663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: rep decoy
+  m_text: arachnid2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -1571,54 +1571,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3880604795139616737}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5471306801915225273}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5482761862929193778}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7034119249499626947}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   m_IsOn: 0
 --- !u!114 &8097414958086572338
 MonoBehaviour:
@@ -1632,6 +1584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b424f359f8253446945726053cb9a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisTog: {fileID: 0}
   kingdomPanel: {fileID: 3880604795139616737}
   phylumPanel: {fileID: 5471306801915225273}
   classPanel: {fileID: 5482761862929193778}
@@ -1644,7 +1597,7 @@ MonoBehaviour:
   - {fileID: 6778098704590660173}
   phylums:
   - {fileID: 8134646287720090422}
-  - {fileID: 7258114128240599693}
+  - {fileID: 7535720154300538185}
   classes:
   - {fileID: 8614658154525897994}
   - {fileID: 839789366482616294}
@@ -2010,13 +1963,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8607882652786088706}
   m_Father: {fileID: 6167578280595850522}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 155, y: -110}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 311, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2884657408461905446
@@ -2047,7 +2001,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bef7d83ff9d7b384d83c0bf554024ceb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bbd908d3bd862394f8a6a88c26053d14, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2278,7 +2232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &875833665986330992
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,7 +2724,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: rep decoy
+  m_text: arachnid2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -2978,7 +2932,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3228,7 +3182,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4858471068232450218}
   - component: {fileID: 8622826578364741753}
-  - component: {fileID: 9114753372968502227}
   - component: {fileID: 8851753506828644824}
   - component: {fileID: 3692474996124359069}
   m_Layer: 5
@@ -3267,36 +3220,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094553234939514351}
   m_CullTransparentMesh: 1
---- !u!114 &9114753372968502227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094553234939514351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bbd908d3bd862394f8a6a88c26053d14, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &8851753506828644824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3337,20 +3260,32 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 3844747834576965529}
+  m_TargetGraphic: {fileID: 4478787949407460960}
   toggleTransition: 1
-  graphic: {fileID: 4478787949407460960}
+  graphic: {fileID: 9144770072488328442}
   m_Group: {fileID: 5882257569056737203}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1042993098357619185}
+      - m_Target: {fileID: 7066644314947335719}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8097414958086572338}
+        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
+        m_MethodName: SetThisTog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8851753506828644824}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3368,14 +3303,14 @@ MonoBehaviour:
           m_StringArgument: fungi
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8097414958086572338}
-        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: RefreshTree
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setKingdom
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3689,34 +3624,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5259450067533601328}
-        m_TargetAssemblyTypeName: OpenDataTween, Assembly-CSharp
-        m_MethodName: MoveChildren
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7111472897871572388}
-        m_TargetAssemblyTypeName: OpenDataTween, Assembly-CSharp
-        m_MethodName: MoveChildren
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4020834324120874683}
-        m_TargetAssemblyTypeName: OpenDataTween, Assembly-CSharp
-        m_MethodName: MoveChildren
-        m_Mode: 1
+      - m_Target: {fileID: 5482761862929193778}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4511,9 +4422,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7758469085734011270}
-  - component: {fileID: 5395671452868477056}
-  - component: {fileID: 7429237065531217003}
-  - component: {fileID: 8709284940151140006}
   - component: {fileID: 802954033590040290}
   - component: {fileID: 2047539300704698073}
   m_Layer: 5
@@ -4548,70 +4456,6 @@ RectTransform:
   m_AnchoredPosition: {x: 690.7, y: 945.99994}
   m_SizeDelta: {x: 311, y: 645}
   m_Pivot: {x: 0.5, y: 1}
---- !u!222 &5395671452868477056
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745781428414993808}
-  m_CullTransparentMesh: 1
---- !u!114 &7429237065531217003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745781428414993808}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!114 &8709284940151140006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745781428414993808}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 2
-  m_Spacing: 5
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 1
-  m_ReverseArrangement: 0
 --- !u!114 &802954033590040290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4641,7 +4485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 1
+  m_AllowSwitchOff: 0
 --- !u!1 &1777546020822600963
 GameObject:
   m_ObjectHideFlags: 0
@@ -5888,7 +5732,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: reptilia
+  m_text: crusty
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -6193,6 +6037,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
+        m_MethodName: SetThisTog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7587453932210718949}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8097414958086572338}
+        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
         m_MethodName: SetCurrentClass
         m_Mode: 5
         m_Arguments:
@@ -6203,10 +6059,10 @@ MonoBehaviour:
           m_StringArgument: mammalia
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8097414958086572338}
-        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: RefreshTree
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setClass
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6476,10 +6332,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3605986553698578252}
-        m_TargetAssemblyTypeName: OpenDataTween, Assembly-CSharp
-        m_MethodName: MoveChildren
-        m_Mode: 1
+      - m_Target: {fileID: 3880604795139616737}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7836,7 +7692,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -7971,22 +7827,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2863100430194301098}
-        m_TargetAssemblyTypeName: OpenDataTween, Assembly-CSharp
-        m_MethodName: MoveChildren
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6159332777754061127}
-        m_TargetAssemblyTypeName: OpenDataTween, Assembly-CSharp
-        m_MethodName: MoveChildren
-        m_Mode: 1
+      - m_Target: {fileID: 5471306801915225273}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8843,20 +8687,32 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: SetCurrentClass
-        m_Mode: 5
+        m_MethodName: SetThisTog
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 9148641462278360282}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: carnivora
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
         m_MethodName: RefreshTree
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setOrder
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9084,7 +8940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: birdy
+  m_text: arachnid1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -9253,24 +9109,36 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: SetCurrentPhylum
+        m_MethodName: SetThisTog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7222522492199747955}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8097414958086572338}
+        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
+        m_MethodName: SetCurrentClass
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: fungus
+          m_StringArgument: fungi
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8097414958086572338}
-        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: RefreshTree
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setClass
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9359,7 +9227,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: rep decoy
+  m_text: crusty2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -10979,6 +10847,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &3516535490261783861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11898,6 +11778,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &3516535490633540257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12065,6 +11957,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &3516535490637626426
 MonoBehaviour:
@@ -15619,6 +15523,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
+        m_MethodName: SetThisTog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1783284845210049483}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8097414958086572338}
+        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
         m_MethodName: SetCurrentPhylum
         m_Mode: 5
         m_Arguments:
@@ -15629,10 +15545,10 @@ MonoBehaviour:
           m_StringArgument: chordata
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8097414958086572338}
-        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: RefreshTree
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setPhylum
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16115,7 +16031,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: reptilia
+  m_text: crusty
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -16401,7 +16317,7 @@ GameObject:
   - component: {fileID: 3204520159215729965}
   - component: {fileID: 1966715309653998521}
   m_Layer: 5
-  m_Name: tog_repDecoy
+  m_Name: tog_arachnida2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16489,14 +16405,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: SetCurrentClass
-        m_Mode: 5
+        m_MethodName: SetThisTog
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 3204520159215729965}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: rep decoy
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
@@ -16507,6 +16423,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setOrder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -16730,7 +16658,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: birdy
+  m_text: arachnid1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -17002,7 +16930,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6965426433437771054}
   - component: {fileID: 7707812901483176566}
-  - component: {fileID: 3844747834576965529}
   - component: {fileID: 4227557483324644687}
   - component: {fileID: 2422730969095373335}
   m_Layer: 5
@@ -17041,36 +16968,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4373147444797928324}
   m_CullTransparentMesh: 1
---- !u!114 &3844747834576965529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4373147444797928324}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 87468ec3752cfa840a89e2c835ea7128, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &4227557483324644687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17132,6 +17029,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
+        m_MethodName: SetThisTog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4227557483324644687}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8097414958086572338}
+        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
         m_MethodName: SetCurrentKingdom
         m_Mode: 5
         m_Arguments:
@@ -17142,10 +17051,10 @@ MonoBehaviour:
           m_StringArgument: animalia
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8097414958086572338}
-        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: RefreshTree
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setKingdom
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18629,14 +18538,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: SetCurrentClass
-        m_Mode: 5
+        m_MethodName: SetThisTog
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 7788094880148924303}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: rep decoy
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
@@ -18647,6 +18556,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setOrder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18846,6 +18767,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
+        m_MethodName: SetThisTog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7720763393941484863}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8097414958086572338}
+        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
         m_MethodName: SetCurrentClass
         m_Mode: 5
         m_Arguments:
@@ -18856,14 +18789,14 @@ MonoBehaviour:
           m_StringArgument: reptilia
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8097414958086572338}
-        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: RefreshTree
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setClass
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -19301,14 +19234,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: SetCurrentClass
-        m_Mode: 5
+        m_MethodName: SetThisTog
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 5433489581462013940}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: birdy
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
@@ -19319,6 +19252,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setOrder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -19786,7 +19731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: birdy
+  m_text: crusty1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -19867,7 +19812,7 @@ GameObject:
   - component: {fileID: 5746944955660502036}
   - component: {fileID: 4391607277196220733}
   m_Layer: 5
-  m_Name: tog_birdy
+  m_Name: tog_arachnida1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19955,14 +19900,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: SetCurrentClass
-        m_Mode: 5
+        m_MethodName: SetThisTog
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 5746944955660502036}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: birdy
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
@@ -19973,6 +19918,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setOrder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -21119,6 +21076,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
+        m_MethodName: SetThisTog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8124386716177283280}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8097414958086572338}
+        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
         m_MethodName: SetCurrentClass
         m_Mode: 5
         m_Arguments:
@@ -21129,14 +21098,14 @@ MonoBehaviour:
           m_StringArgument: crusty
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8097414958086572338}
-        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: RefreshTree
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setClass
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -21225,7 +21194,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: mammalia
+  m_text: arachnida
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -22509,7 +22478,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: mammalia
+  m_text: arachnida
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -22814,6 +22783,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
+        m_MethodName: SetThisTog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4644427570502182328}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8097414958086572338}
+        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
         m_MethodName: SetCurrentClass
         m_Mode: 5
         m_Arguments:
@@ -22824,14 +22805,14 @@ MonoBehaviour:
           m_StringArgument: arachnida
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8097414958086572338}
-        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: RefreshTree
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setClass
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -23237,7 +23218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -75}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 311, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1672625959399822071
@@ -23502,7 +23483,7 @@ GameObject:
   - component: {fileID: 9138186247332776365}
   - component: {fileID: 1057738311478982870}
   m_Layer: 5
-  m_Name: tog_birdy
+  m_Name: tog_crusty1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23590,14 +23571,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: SetCurrentClass
-        m_Mode: 5
+        m_MethodName: SetThisTog
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 9138186247332776365}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: birdy
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
@@ -23608,6 +23589,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setOrder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -23889,6 +23882,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
+        m_MethodName: SetThisTog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3507047635974978435}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8097414958086572338}
+        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
         m_MethodName: SetCurrentPhylum
         m_Mode: 5
         m_Arguments:
@@ -23899,14 +23904,14 @@ MonoBehaviour:
           m_StringArgument: arthropoda
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8097414958086572338}
-        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: RefreshTree
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setPhylum
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -24551,7 +24556,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: birdy
+  m_text: crusty1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -24821,7 +24826,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 87468ec3752cfa840a89e2c835ea7128, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d269787ab133bc43b5c3131ad7e6a3d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25294,6 +25299,82 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7069725153569744940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8607882652786088706}
+  - component: {fileID: 916561550016078892}
+  - component: {fileID: 9144770072488328442}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8607882652786088706
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069725153569744940}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5384847647974438499}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 155.5, y: -34.5}
+  m_SizeDelta: {x: 311, y: 69}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &916561550016078892
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069725153569744940}
+  m_CullTransparentMesh: 1
+--- !u!114 &9144770072488328442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069725153569744940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: bef7d83ff9d7b384d83c0bf554024ceb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &7095999899861760321
 GameObject:
   m_ObjectHideFlags: 0
@@ -25306,7 +25387,7 @@ GameObject:
   - component: {fileID: 5403425898914502294}
   - component: {fileID: 5117026562127458225}
   m_Layer: 5
-  m_Name: tog_repDecoy
+  m_Name: tog_crusty2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25394,14 +25475,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: SetCurrentClass
-        m_Mode: 5
+        m_MethodName: SetThisTog
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 5403425898914502294}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: rep decoy
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
@@ -25412,6 +25493,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setOrder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -25880,7 +25973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &7340940669922255659
 GameObject:
   m_ObjectHideFlags: 0
@@ -25891,8 +25984,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2310764687901065435}
   - component: {fileID: 6609590721649452994}
+  - component: {fileID: 7327220477848538566}
   m_Layer: 5
-  m_Name: fungi
+  m_Name: fungus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25936,6 +26030,19 @@ MonoBehaviour:
   openHeight: 0
   duration: 0
   closeDuration: 0
+--- !u!114 &7327220477848538566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7340940669922255659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &7389151701444197451
 GameObject:
   m_ObjectHideFlags: 0
@@ -26641,7 +26748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &7677014455722586143
 GameObject:
   m_ObjectHideFlags: 0
@@ -26742,58 +26849,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1804203682924131893}
-        m_TargetAssemblyTypeName: OpenDataTween, Assembly-CSharp
-        m_MethodName: MoveChildren
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2990362119637389101}
-        m_TargetAssemblyTypeName: OpenDataTween, Assembly-CSharp
-        m_MethodName: MoveChildren
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6689806124503543540}
-        m_TargetAssemblyTypeName: OpenDataTween, Assembly-CSharp
-        m_MethodName: MoveChildren
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4994985595250770254}
-        m_TargetAssemblyTypeName: OpenDataTween, Assembly-CSharp
-        m_MethodName: MoveChildren
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6609590721649452994}
-        m_TargetAssemblyTypeName: OpenDataTween, Assembly-CSharp
-        m_MethodName: MoveChildren
-        m_Mode: 1
+      - m_Target: {fileID: 7034119249499626947}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -27880,7 +27939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &8142316833773365915
 GameObject:
   m_ObjectHideFlags: 0
@@ -28344,6 +28403,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: checkAnswers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1827331359710321063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28502,7 +28573,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: rep decoy
+  m_text: crusty2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
   m_sharedMaterial: {fileID: -5115789969939660978, guid: 82dcdcfa7ea1f704b8b86fb2bbb2be7a, type: 2}
@@ -28883,6 +28954,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
+        m_MethodName: SetThisTog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8719398177720102437}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8097414958086572338}
+        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
         m_MethodName: SetCurrentPhylum
         m_Mode: 5
         m_Arguments:
@@ -28893,14 +28976,14 @@ MonoBehaviour:
           m_StringArgument: fungus
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8097414958086572338}
-        m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: RefreshTree
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setPhylum
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -29105,7 +29188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &8617170811008811911
 GameObject:
   m_ObjectHideFlags: 0
@@ -29476,14 +29559,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: SetCurrentClass
-        m_Mode: 5
+        m_MethodName: SetThisTog
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 6622751809047021510}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: cat
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
@@ -29494,6 +29577,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setOrder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -29733,7 +29828,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2904409706416648831}
   toggleTransition: 1
   graphic: {fileID: 4149299617504697616}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 7327220477848538566}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -29751,14 +29846,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
         m_TargetAssemblyTypeName: ClassifyTracker, Assembly-CSharp
-        m_MethodName: SetCurrentClass
-        m_Mode: 5
+        m_MethodName: SetThisTog
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 7506303130268343024}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: fungi
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8097414958086572338}
@@ -29769,6 +29864,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Classify, Assembly-CSharp
+        m_MethodName: setOrder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

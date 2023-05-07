@@ -16,13 +16,13 @@ public enum kingdoms{
     Animalia, Fungi
 }
 public enum phylums{
-    Chordata, Arthropoda, New
+    Chordata, Arthropoda, FungiPhy
 }
 public enum classes{
-    Reptilia, Mammalia, Arachnida, Malacostraca, New
+    Mammalia, Reptilia, Arachnida, Crusty, FungiClass
 }
 public enum orders{
-    Decapoda, New, Carnivora
+    Carnivora, Cat, Birdy, RepDecoy, Arachnida1, Arachnida2, Crusty1, Crusty2, FungiOrd
 }
 
 [System.Serializable]

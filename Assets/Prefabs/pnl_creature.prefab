@@ -226,7 +226,7 @@ MonoBehaviour:
   taxa:
     kingdom: 0
     phylum: 0
-    classs: 1
+    classs: 0
     order: 1
   soundTest:
     frequency1Reaction: 0
