@@ -333,6 +333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pnl_endScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 7028662766963930740, guid: 122d0360407143241bb506890279d392, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7028662766963930741, guid: 122d0360407143241bb506890279d392, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1194,6 +1198,7 @@ GameObject:
   - component: {fileID: 1642009695}
   - component: {fileID: 1642009697}
   - component: {fileID: 1642009698}
+  - component: {fileID: 1642009699}
   m_Layer: 0
   m_Name: CONTROLLER
   m_TagString: Untagged
@@ -1269,6 +1274,16 @@ MonoBehaviour:
   malacostraca: 0
   decapoda: 0
   carnivora: 0
+  img_anamalia: {fileID: 0}
+  img_fungi: {fileID: 0}
+  img_chordata: {fileID: 0}
+  img_arthropada: {fileID: 0}
+  img_reptilia: {fileID: 0}
+  img_mamalia: {fileID: 0}
+  img_arachnida: {fileID: 0}
+  img_malacostraca: {fileID: 0}
+  img_decapoda: {fileID: 0}
+  img_carnivora: {fileID: 0}
 --- !u!114 &1642009696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1391,6 +1406,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 159127111}
   endPanel: {fileID: 1176206550}
+--- !u!114 &1642009699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642009691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd9f19dd97f0de41b6ec6c58d069de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPossible: 0
+  doItForHer: {fileID: 1940651046}
 --- !u!1 &1791592652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,6 +1903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pnl_start
       objectReference: {fileID: 0}
+    - target: {fileID: 2738798326059754663, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
 --- !u!224 &1938985197 stripped
@@ -1976,10 +2009,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: pnl_credits
       objectReference: {fileID: 0}
+    - target: {fileID: 5828176680787714283, guid: 64d60be24ac911443a966bb5d4973a89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d60be24ac911443a966bb5d4973a89, type: 3}
 --- !u!224 &1940651045 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5828176680787714280, guid: 64d60be24ac911443a966bb5d4973a89, type: 3}
+  m_PrefabInstance: {fileID: 1940651044}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1940651046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2831216362685534193, guid: 64d60be24ac911443a966bb5d4973a89, type: 3}
   m_PrefabInstance: {fileID: 1940651044}
   m_PrefabAsset: {fileID: 0}
