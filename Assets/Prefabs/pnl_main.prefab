@@ -9473,7 +9473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3516535489708075184
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14310,7 +14310,6 @@ GameObject:
   - component: {fileID: 3516535491624632179}
   - component: {fileID: 3516535491624632141}
   - component: {fileID: 3516535491624632178}
-  - component: {fileID: 3516535491624632140}
   m_Layer: 5
   m_Name: txt_dialog
   m_TagString: Untagged
@@ -14435,18 +14434,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &3516535491624632140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3516535491624632176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd45cd654a2d4be4abc5f9d234518efd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3516535491728621103
 GameObject:
   m_ObjectHideFlags: 0

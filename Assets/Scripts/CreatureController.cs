@@ -117,9 +117,6 @@ public class CreatureController : MonoBehaviour
             case 2:
                 reaction = soundTest.frequency2Reaction;
                 break;
-            case 3:
-                reaction = soundTest.frequency3Reaction;
-                break;
         }
 
         switch (reaction) {

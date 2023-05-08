@@ -46,6 +46,7 @@ public class Classify : MonoBehaviour
         gameObject.GetComponent<MainController>().score = score;
         endPanel.SetActive(true);
         scoreText.SetText("You got " + score + "/4 correct.\n" + "The correct answers were:\n" +
-                           checker.kingdom + " " + checker.phylum + " " + checker.classs + " " + checker.order + ".");
+                           checker.kingdom + " " + checker.phylum + " " + checker.classs + " " +
+                           checker.order + ".");
     }
 }
