@@ -387,18 +387,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826012412732279}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &4447892939406576364
 GameObject:
@@ -699,6 +687,7 @@ GameObject:
   - component: {fileID: 8325826010668844917}
   - component: {fileID: 8325826010668844915}
   - component: {fileID: 8325826010668844914}
+  - component: {fileID: 3145983132169287018}
   m_Layer: 5
   m_Name: pnl_data
   m_TagString: Untagged
@@ -765,6 +754,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3145983132169287018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826010668844916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3abfa81173acaa47a7cfba410bd82a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tog: {fileID: 5927688857854799875}
+  xDistOut: 230
+  xDistIn: -230
+  duration: 1
 --- !u!1 &8325826010689090000
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,7 +933,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8325826010752630696
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4102,13 +4107,14 @@ GameObject:
   - component: {fileID: 8325826012412732274}
   - component: {fileID: 8325826012412732277}
   - component: {fileID: 8325826012412732276}
+  - component: {fileID: 9128498400731079858}
   m_Layer: 5
   m_Name: pnl_guide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8325826012412732274
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4127,7 +4133,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -734.0166, y: -8.996305}
+  m_AnchoredPosition: {x: -1192, y: -8.996305}
   m_SizeDelta: {x: 370, y: 726}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8325826012412732277
@@ -4168,6 +4174,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &9128498400731079858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826012412732279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3abfa81173acaa47a7cfba410bd82a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tog: {fileID: 7949236832271353780}
+  xDistOut: 230
+  xDistIn: -230
+  duration: 1
 --- !u!1 &8325826012474290564
 GameObject:
   m_ObjectHideFlags: 0
@@ -5489,10 +5511,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826010668844916}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
+      - m_Target: {fileID: 3145983132169287018}
+        m_TargetAssemblyTypeName: SlideOutTween, Assembly-CSharp
+        m_MethodName: MovePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9128498400731079858}
+        m_TargetAssemblyTypeName: SlideOutTween, Assembly-CSharp
+        m_MethodName: MovePanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
