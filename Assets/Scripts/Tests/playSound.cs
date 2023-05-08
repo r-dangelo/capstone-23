@@ -12,4 +12,9 @@ public class playSound : MonoBehaviour
         source.clip = soundToPlay;
         source.Play();
     }
+
+    public float GetSoundLength()
+    {
+        return soundToPlay.length;
+    }
 }
