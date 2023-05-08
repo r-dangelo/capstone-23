@@ -335,7 +335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7028662766963930740, guid: 122d0360407143241bb506890279d392, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7028662766963930741, guid: 122d0360407143241bb506890279d392, type: 3}
       propertyPath: m_Pivot.x
@@ -834,6 +834,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1858636939}
     m_Modifications:
+    - target: {fileID: 8325826010689090014, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826010689090014, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826010689090014, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8325826010752630696, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -926,6 +938,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8325826010930799533, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826010930799533, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826010930799533, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8325826011007927807, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -966,6 +990,134 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8325826011115368887, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826011115368887, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826011115368887, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826011328120107, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826011474996033, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826011474996033, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826011474996033, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826011474996033, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826011521836995, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826011521836995, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826011521836995, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826011533215873, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826011533215873, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826011533215873, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012017755317, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826012017755317, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012017755317, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012182901407, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826012182901407, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012182901407, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012564200847, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826012564200847, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012564200847, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012615336268, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826012615336268, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012615336268, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012700937996, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826012700937996, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012700937996, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012746345439, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 421528353}
+    - target: {fileID: 8325826012746345439, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doXRayTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325826012746345439, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CreatureController, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b55ac64e1ca2d994e9ae6bf4bda11045, type: 3}
 --- !u!224 &1047544325 stripped
@@ -998,6 +1150,26 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 1642009694}
+    - target: {fileID: 4474545353256713485, guid: 4fee017f6d41cf3408a66d8ee137a327, type: 3}
+      propertyPath: xRayTest.ImportantSections.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474545353256713485, guid: 4fee017f6d41cf3408a66d8ee137a327, type: 3}
+      propertyPath: xRayTest.ImportantSections.Array.data[0].infoGained
+      value: aaaaaaaaaaaa
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474545353256713485, guid: 4fee017f6d41cf3408a66d8ee137a327, type: 3}
+      propertyPath: xRayTest.ImportantSections.Array.data[1].infoGained
+      value: awertweafds
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474545353256713485, guid: 4fee017f6d41cf3408a66d8ee137a327, type: 3}
+      propertyPath: xRayTest.ImportantSections.Array.data[0].importantSection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474545353256713485, guid: 4fee017f6d41cf3408a66d8ee137a327, type: 3}
+      propertyPath: xRayTest.ImportantSections.Array.data[1].importantSection
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4474545354053502264, guid: 4fee017f6d41cf3408a66d8ee137a327, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1418,7 +1590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd9f19dd97f0de41b6ec6c58d069de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPossible: 0
+  isPossible: 1
   doItForHer: {fileID: 1940651046}
 --- !u!1 &1791592652
 GameObject:
@@ -1907,6 +2079,54 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2738798326510902420, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738798326510902420, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738798326510902420, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738798326510902420, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738798327226100523, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738798327226100523, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738798327226100523, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738798327226100523, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738798327476686369, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738798327476686369, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738798327476686369, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2738798327476686369, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 427aacae1d05e6a418a44b0eeb137af6, type: 3}
 --- !u!224 &1938985197 stripped
@@ -1921,6 +2141,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1858636939}
     m_Modifications:
+    - target: {fileID: 2831216362685534193, guid: 64d60be24ac911443a966bb5d4973a89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5828176680787714280, guid: 64d60be24ac911443a966bb5d4973a89, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2011,7 +2235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5828176680787714283, guid: 64d60be24ac911443a966bb5d4973a89, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d60be24ac911443a966bb5d4973a89, type: 3}

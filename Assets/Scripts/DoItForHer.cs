@@ -8,7 +8,7 @@ using UnityEngine.U2D;
 public class DoItForHer : MonoBehaviour
 {
     public bool isPossible = false;
-    string word;
+    string word = "";
     [SerializeField] GameObject doItForHer;
 
     void Start()
@@ -18,9 +18,14 @@ public class DoItForHer : MonoBehaviour
 
     void Update()
     {
-        if(isPossible) {
+        if(isPossible && Input.anyKeyDown) {
             word += keyPressed();
-            if (Input.GetKeyDown(KeyCode.Return) && word == "doitforher") { 
+            print(word);
+
+            if (Input.GetKeyDown(KeyCode.Tab)) {
+                word = "";
+            }
+            if (word == "DOITFORHER") {
                 doItForHer.SetActive(true);
             }
         }
