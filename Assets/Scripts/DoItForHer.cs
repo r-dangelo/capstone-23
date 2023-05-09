@@ -11,10 +11,11 @@ public class DoItForHer : MonoBehaviour
     string word = "";
     [SerializeField] GameObject doItForHer;
 
-    void Start()
+    public void setPossibility(bool possibility)
     {
-        
+        isPossible = possibility;
     }
+
 
     void Update()
     {
