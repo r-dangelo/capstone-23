@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WigglyAnim : MonoBehaviour
 {
+    [SerializeField] public float baseXScale;
+    [SerializeField] public float baseYScale;
     [SerializeField] public float xScale;
     [SerializeField] public float yScale;
     [SerializeField] public float yDist;
@@ -20,10 +22,10 @@ public class WigglyAnim : MonoBehaviour
         if(yDist != 0)
             LeanTween.moveLocalY(this.gameObject, yDist, duration).setEaseInQuart();
         LeanTween.scaleY(this.gameObject, yScale, duration * .8f).setEaseInOutQuart().setDelay(duration * .2f);
-        LeanTween.scaleX(this.gameObject, -1, duration*1.2f).setEaseInOutQuart().setDelay(duration*.8f);
+        LeanTween.scaleX(this.gameObject, baseXScale, duration*1.2f).setEaseInOutQuart().setDelay(duration*.8f);
         if (yDist != 0)
             LeanTween.moveLocalY(this.gameObject, -yDist, duration).setEaseOutQuart().setDelay(duration);
-        LeanTween.scaleY(this.gameObject, 1, duration).setEaseInOutQuart().setDelay(duration);
+        LeanTween.scaleY(this.gameObject, baseYScale, duration).setEaseInOutQuart().setDelay(duration);
         StartCoroutine(WaitForAnim(duration*1.8f));
     }
 
