@@ -6,19 +6,19 @@ using UnityEngine.UI;
 
 public class Blur : MonoBehaviour
 {
-    public void startBlur()
+    [SerializeField] Slider slider;
+    float targetBlurVal = 0;
+
+    private void Start()
     {
-        Color temp = this.GetComponent<Image>().color;
-        temp.a = Random.Range(.3f, .9f);
-        this.GetComponent<Image>().color = temp;
+        targetBlurVal = Random.Range(.3f, .9f);
     }
 
-    // Completely Transparent = clear image
-    // 
     public void changeBlur()
     {
+        float difference = Mathf.Abs(slider.value - targetBlurVal);
         Color temp = this.GetComponent<Image>().color;
-        temp.a -= 0.1f;
+        temp.a = difference;
         this.GetComponent<Image>().color = temp;
     }
 }

@@ -39,21 +39,24 @@ public class GameFSM : StateMachineMB
     public void ChangeToMain() {
         ChangeState(main);
         controller.playCancelSound();
+        controller.gameObject.GetComponent<ChangeMusic>().toggleMusic();
     }
 
     public void ChangeToHearingTest() {
         ChangeState(hearingTest);
         controller.playSelectSound();
+        controller.gameObject.GetComponent<ChangeMusic>().toggleMusic();
     }
 
     public void ChangeToXRayTest() {
         ChangeState(xrayTest);
         controller.playSelectSound();
+        controller.gameObject.GetComponent<ChangeMusic>().toggleMusic();
     }
 
     public void ChangeToMicroscope() {
         ChangeState(microscopeTest);
         controller.playSelectSound();
+        controller.gameObject.GetComponent<ChangeMusic>().toggleMusic();
     }
-
 }

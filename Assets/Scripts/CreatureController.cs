@@ -44,6 +44,11 @@ public class SoundTest
     [Header("Sprites")]
     public Sprite positiveReaction;
     public Sprite negativeReaction;
+
+    [Header("Dialog")]
+    public string positiveDia;
+    public string negativeDia;
+    public string neutralDia;
 }
 
 [System.Serializable]
@@ -65,22 +70,24 @@ public class XRayTest
 [System.Serializable]
 public class SampleTest
 {
-    public string moreCorrectInformation;
-    public string correctInformation;
-    public string unhelpfulInformation;
+    public string correct;
+    public string incorrect;
+    public string sampleTestComplete;
+    public bool isTopSampleCorrect;
 }
 
-[System.Serializable]
+/*[System.Serializable]
 public struct SampleTestImages
 {
     public Sprite controlImage;
     public Sprite topImage;
     public Sprite bottomImage;
     public bool isTopImageCorrect;
-}
+}*/
 
 public class CreatureController : MonoBehaviour
 {
+
     [Header("Taxonomy")]
     [Tooltip("Please be careful when choosing.")]
     public Taxa taxa;
@@ -88,15 +95,17 @@ public class CreatureController : MonoBehaviour
     [Header("Tests")]
     public SoundTest soundTest;
     public XRayTest xRayTest;
-    public SampleTestImages[] sampleTest;
+    public SampleTest sampleTest;
+    // public SampleTestImages[] sampleTest; // USED WHEN THERE WERE MULTIPLE SAMPLES
 
     [Header("Miscellaneous")]
     [SerializeField] AudioClip petSound;
     [SerializeField] MainController controller;
 
     Sprite defaultImage;
-    int sampleTestIndex = 0;
-    int sampleTestPoints = 0;
+    bool sampleTestComplete = false;
+    // int sampleTestIndex = 0;
+    //int sampleTestPoints = 0;
 
     public bool isPettable { get; set; }
 
@@ -121,12 +130,15 @@ public class CreatureController : MonoBehaviour
         switch (reaction) {
             case soundReactions.None:
                 gameObject.GetComponent<Image>().sprite = defaultImage;
+                controller.gameObject.GetComponent<Dialogue>().setSoundDialogue(soundTest.neutralDia);
                 break;
             case soundReactions.Positive:
                 gameObject.GetComponent<Image>().sprite = soundTest.positiveReaction;
+                controller.gameObject.GetComponent<Dialogue>().setSoundDialogue(soundTest.positiveDia);
                 break;
             case soundReactions.Negative:
                 gameObject.GetComponent<Image>().sprite = soundTest.negativeReaction;
+                controller.gameObject.GetComponent<Dialogue>().setSoundDialogue(soundTest.negativeDia);
                 break;
         }
     }
@@ -135,14 +147,15 @@ public class CreatureController : MonoBehaviour
     {
         for(int i = 0; i < xRayTest.ImportantSections.Length; i++) {
             if (xRayTest.ImportantSections[i].importantSection == buttonNumber) {
-                print(xRayTest.ImportantSections[i].infoGained);
+                controller.gameObject.GetComponent<Dialogue>().setXRayDialogue(
+                            xRayTest.ImportantSections[i].infoGained);
             }
         }
     }
 
     public void doSampleTest(int buttonNumber)
     {
-        try {
+        /*try {
             SampleTestImages tester = sampleTest[sampleTestIndex];
             if (buttonNumber == 1 && tester.isTopImageCorrect) {
                 sampleTestPoints++;
@@ -151,11 +164,22 @@ public class CreatureController : MonoBehaviour
         }
         catch (IndexOutOfRangeException e) {
             Debug.Log(e + " Test Over, do something");
+        }*/
+        if (!sampleTestComplete) {
+            if (buttonNumber == 1 && sampleTest.isTopSampleCorrect) {
+                controller.gameObject.GetComponent<Dialogue>().setMicroDialogue(sampleTest.correct);
+            }
+            else {
+                controller.gameObject.GetComponent<Dialogue>().setMicroDialogue(sampleTest.incorrect);
+            }
         }
-        
+        else {
+            controller.gameObject.GetComponent<Dialogue>().setMicroDialogue(sampleTest.sampleTestComplete);
+        }
+        sampleTestComplete = true;
     }
 
-    void endTest()
+    /*void endTest()
     {
         switch (sampleTestPoints)
         {
@@ -169,9 +193,9 @@ public class CreatureController : MonoBehaviour
                 break;
         }
 
-    }
+    }*/
 
-    public Sprite[] getNextImages()
+    /*public Sprite[] getNextImages()
     {
         if (sampleTestIndex < sampleTest.Length) {
             Sprite[] nextImages = new Sprite[3];
@@ -182,7 +206,7 @@ public class CreatureController : MonoBehaviour
             return nextImages;
         }
         return null;
-    }
+    }*/
 
     public void pet()
     {

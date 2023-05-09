@@ -41,6 +41,8 @@ public class MainController : MonoBehaviour
 {
     List<CreatureController> creatures;
     public CreatureController currentCreature;
+    [SerializeField] Texture2D cursor;
+    [SerializeField] Texture2D petCursor;
 
     [Header("Panels")]
     public Panels panels;
@@ -62,6 +64,7 @@ public class MainController : MonoBehaviour
     private void Start()
     {
         creatures = new List<CreatureController>();
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
         
         GameObject[] creatureGO = GameObject.FindGameObjectsWithTag("Creature");
         foreach (GameObject obj in creatureGO)
@@ -107,10 +110,10 @@ public class MainController : MonoBehaviour
     {
         currentCreature.doSampleTest(buttonNumber);
         Sprite[] nextSprites = new Sprite[3];
-        nextSprites = currentCreature.getNextImages();
-        sampleTestLocations.controlImage.sprite = nextSprites[0];
+        // nextSprites = currentCreature.getNextImages();
+        /*sampleTestLocations.controlImage.sprite = nextSprites[0];
         sampleTestLocations.topImage.sprite = nextSprites[1];
-        sampleTestLocations.bottomImage.sprite = nextSprites[2];
+        sampleTestLocations.bottomImage.sprite = nextSprites[2];*/
     }
 
     public void moveCreature(string StateNameMessy)
@@ -122,6 +125,16 @@ public class MainController : MonoBehaviour
     public void resetCreature()
     {
         currentCreature.resetCreature();
+    }
+
+    public void pettingCursor()
+    {
+        Cursor.SetCursor(petCursor, Vector2.zero, CursorMode.Auto);
+    }
+
+    public void resetCursor()
+    {
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
     }
 
     public void setPettable(bool newPettability)
