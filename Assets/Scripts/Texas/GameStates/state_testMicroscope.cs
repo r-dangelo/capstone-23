@@ -25,7 +25,6 @@ public class state_testMicroscope : State
 
     public override void Exit()
     {
-        // record info
         controller.setPettable(true);
         controller.panels.sampleTestPanel.SetActive(false);
         controller.resetCreature();

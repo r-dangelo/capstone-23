@@ -25,7 +25,6 @@ public class state_testHearing : State
 
     public override void Exit()
     {
-        // record info
         controller.setPettable(true);
         controller.panels.hearingTestPanel.SetActive(false);
         controller.resetCreature();

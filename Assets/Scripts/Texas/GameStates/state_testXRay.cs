@@ -25,7 +25,6 @@ public class state_testXRay : State
 
     public override void Exit()
     {
-        // record info
         controller.setPettable(true);
         controller.panels.xrayTestPanel.SetActive(false);
         controller.resetCreature();
