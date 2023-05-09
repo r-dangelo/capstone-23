@@ -26,6 +26,7 @@ public class Sounds
 {
     public AudioClip buttonClick;
     public AudioClip cancelClick;
+    public AudioClip hover;
 }
 
 [System.Serializable]
@@ -56,6 +57,7 @@ public class MainController : MonoBehaviour
     int index = 0;
     IDictionary<string, RectTransform> locations = new Dictionary<string, RectTransform>();
     public int score = 0;
+    AudioSource source;
 
     private void Start()
     {
@@ -76,6 +78,7 @@ public class MainController : MonoBehaviour
         locations.Add(nameof(state_testHearing), location.soundLocation);
         locations.Add(nameof(state_testXRay), location.xrayLocation);
         locations.Add(nameof(state_testMicroscope), location.microscopeLocation);
+        source = gameObject.GetComponent<AudioSource>();
     }
 
     public CreatureController changeCreature()
@@ -124,6 +127,24 @@ public class MainController : MonoBehaviour
     public void setPettable(bool newPettability)
     {
         currentCreature.isPettable = newPettability;
+    }
+
+    public void playSelectSound()
+    {
+        source.clip = sound.buttonClick;
+        source.Play();
+    }
+
+    public void playCancelSound()
+    {
+        source.clip = sound.cancelClick;
+        source.Play();
+    }
+
+    public void playHoverSound()
+    {
+        source.clip = sound.hover;
+        source.Play(); 
     }
 
     public void quitGame()

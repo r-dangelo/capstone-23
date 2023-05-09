@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(MainController))]
@@ -31,9 +32,28 @@ public class GameFSM : StateMachineMB
         base.ChangeState(setup);
     }
 
-    public void ChangeToSetup() { ChangeState(setup); }
-    public void ChangeToMain() { ChangeState(main); }
-    public void ChangeToHearingTest() { ChangeState(hearingTest); }
-    public void ChangeToXRayTest() { ChangeState(xrayTest); }
-    public void ChangeToMicroscope() { ChangeState(microscopeTest); }
+    public void ChangeToSetup() { 
+        ChangeState(setup);
+    }
+
+    public void ChangeToMain() {
+        ChangeState(main);
+        controller.playCancelSound();
+    }
+
+    public void ChangeToHearingTest() {
+        ChangeState(hearingTest);
+        controller.playSelectSound();
+    }
+
+    public void ChangeToXRayTest() {
+        ChangeState(xrayTest);
+        controller.playSelectSound();
+    }
+
+    public void ChangeToMicroscope() {
+        ChangeState(microscopeTest);
+        controller.playSelectSound();
+    }
+
 }
