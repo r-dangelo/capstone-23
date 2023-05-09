@@ -409,7 +409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cf731ce54cbcc32409fca5d209be5d60, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e24481a09f6492f4c9de2aa439870b22, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -839,7 +839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 600ed9dfd3b81f146b16d544c95cf369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverObject: {fileID: 0}
   hoverText: {fileID: 6554558422006432933}
 --- !u!1 &2738798326939014339
 GameObject:
@@ -1136,7 +1135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 600ed9dfd3b81f146b16d544c95cf369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverObject: {fileID: 0}
   hoverText: {fileID: 1302098046141022006}
 --- !u!1 &2738798327476686370
 GameObject:
@@ -1286,7 +1284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 600ed9dfd3b81f146b16d544c95cf369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverObject: {fileID: 0}
   hoverText: {fileID: 8666230424512446496}
 --- !u!1 &3058724739748281705
 GameObject:
@@ -1588,6 +1585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60922adb666c50b47ada9f807c5f23a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseXScale: -1
+  baseYScale: 1
   xScale: -1.02
   yScale: 1.03
   yDist: 0
@@ -1681,6 +1680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60922adb666c50b47ada9f807c5f23a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseXScale: -1
+  baseYScale: 1
   xScale: -1.03
   yScale: 1.03
   yDist: 3
