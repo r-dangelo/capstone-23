@@ -11,7 +11,7 @@ public class Blur : MonoBehaviour
 
     private void Start()
     {
-        targetBlurVal = Random.Range(.3f, .9f);
+        targetBlurVal = Random.Range(.8f, 1f);
     }
 
     public void changeBlur()

@@ -9,6 +9,7 @@ public class GameFSM : StateMachineMB
 {
     private MainController controller;
     private JournalTracker journal;
+    private PlayUISounds sounds;
     
     // Members of the Union (States)
     public state_Setup setup { get; private set; }
@@ -25,6 +26,7 @@ public class GameFSM : StateMachineMB
         hearingTest = new state_testHearing(this, controller, journal);
         xrayTest = new state_testXRay(this, controller, journal);
         microscopeTest = new state_testMicroscope(this, controller, journal);
+        sounds = controller.gameObject.GetComponent<PlayUISounds>();
     }
 
     private void Start()
@@ -38,25 +40,25 @@ public class GameFSM : StateMachineMB
 
     public void ChangeToMain() {
         ChangeState(main);
-        controller.playCancelSound();
+        sounds.playCancelSound();
         controller.gameObject.GetComponent<ChangeMusic>().toggleMusic();
     }
 
     public void ChangeToHearingTest() {
         ChangeState(hearingTest);
-        controller.playSelectSound();
-        controller.gameObject.GetComponent<ChangeMusic>().toggleMusic();
+        sounds.playSelectSound();
+        controller.gameObject.GetComponent<ChangeMusic>().duckMusic();
     }
 
     public void ChangeToXRayTest() {
         ChangeState(xrayTest);
-        controller.playSelectSound();
+        sounds.playSelectSound();
         controller.gameObject.GetComponent<ChangeMusic>().toggleMusic();
     }
 
     public void ChangeToMicroscope() {
         ChangeState(microscopeTest);
-        controller.playSelectSound();
+        sounds.playSelectSound();
         controller.gameObject.GetComponent<ChangeMusic>().toggleMusic();
     }
 }

@@ -22,4 +22,18 @@ public class ChangeMusic : MonoBehaviour
             isFullPlaying = true;
         }
     }
+
+    public void duckMusic()
+    {
+        if(isFullPlaying) {
+            fullMusic.volume = 0;
+            focusMusic.volume = 0.3f;
+            isFullPlaying = false;
+        }
+        else {
+            fullMusic.volume = 0.3f;
+            focusMusic.volume = 0;
+            isFullPlaying = true;
+        }
+    }
 }
