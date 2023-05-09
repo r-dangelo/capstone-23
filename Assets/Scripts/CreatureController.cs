@@ -40,7 +40,6 @@ public class SoundTest
     [Header("Frequency Reactions")]
     public soundReactions frequency1Reaction;
     public soundReactions frequency2Reaction;
-    public soundReactions frequency3Reaction;
 
     [Header("Sprites")]
     public Sprite positiveReaction;
@@ -134,7 +133,11 @@ public class CreatureController : MonoBehaviour
 
     public void doXRayTest(int buttonNumber)
     {
-
+        for(int i = 0; i < xRayTest.ImportantSections.Length; i++) {
+            if (xRayTest.ImportantSections[i].importantSection == buttonNumber) {
+                print(xRayTest.ImportantSections[i].infoGained);
+            }
+        }
     }
 
     public void doSampleTest(int buttonNumber)
