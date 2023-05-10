@@ -16,6 +16,11 @@ public class WigglyAnim : MonoBehaviour
         Wiggle();
     }
 
+    public void StartAnim()
+    {
+        Wiggle();
+    }
+
     public void Wiggle()
     {
         LeanTween.scaleX(this.gameObject, xScale, duration).setEaseInOutQuart();
