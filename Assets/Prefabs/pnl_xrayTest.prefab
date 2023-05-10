@@ -1129,6 +1129,7 @@ GameObject:
   - component: {fileID: 8325826010689090012}
   - component: {fileID: 8325826010689090015}
   - component: {fileID: 8325826010689090014}
+  - component: {fileID: 5319678975273194667}
   m_Layer: 5
   m_Name: btn_xray4
   m_TagString: Untagged
@@ -1177,7 +1178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1250,10 +1251,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826010689090000}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 5319678975273194667}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1262,6 +1263,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5319678975273194667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826010689090000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8325826010752630699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,6 +1392,7 @@ GameObject:
   - component: {fileID: 8325826010930799531}
   - component: {fileID: 8325826010930799530}
   - component: {fileID: 8325826010930799533}
+  - component: {fileID: 25945545496102132}
   m_Layer: 5
   m_Name: btn_xray3
   m_TagString: Untagged
@@ -1401,7 +1417,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 123.31, y: -0}
+  m_AnchoredPosition: {x: 123.31006, y: 0}
   m_SizeDelta: {x: 246.6225, y: 245.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8325826010930799531
@@ -1425,7 +1441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1498,10 +1514,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826010930799535}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 25945545496102132}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1510,6 +1526,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &25945545496102132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826010930799535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8325826011007927793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,6 +1687,7 @@ GameObject:
   - component: {fileID: 8325826011115368885}
   - component: {fileID: 8325826011115368884}
   - component: {fileID: 8325826011115368887}
+  - component: {fileID: 3230650611629456920}
   m_Layer: 5
   m_Name: btn_xray4
   m_TagString: Untagged
@@ -1681,7 +1712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 369.93, y: 245.86}
+  m_AnchoredPosition: {x: 369.92993, y: 245.86}
   m_SizeDelta: {x: 246.6225, y: 245.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8325826011115368885
@@ -1705,7 +1736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1778,10 +1809,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826011115368873}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 3230650611629456920}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1790,6 +1821,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3230650611629456920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826011115368873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8325826011121133338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2636,6 +2681,7 @@ GameObject:
   - component: {fileID: 8325826011474996047}
   - component: {fileID: 8325826011474996046}
   - component: {fileID: 8325826011474996033}
+  - component: {fileID: 1843690883972879580}
   m_Layer: 5
   m_Name: btn_xray1
   m_TagString: Untagged
@@ -2684,7 +2730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2757,10 +2803,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826011474996035}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1843690883972879580}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2769,6 +2815,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1843690883972879580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826011474996035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8325826011488680578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2857,6 +2917,7 @@ GameObject:
   - component: {fileID: 8325826011521836993}
   - component: {fileID: 8325826011521836992}
   - component: {fileID: 8325826011521836995}
+  - component: {fileID: 1795799823782848983}
   m_Layer: 5
   m_Name: btn_xray2
   m_TagString: Untagged
@@ -2905,7 +2966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2978,10 +3039,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826011521836997}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1795799823782848983}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2990,6 +3051,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1795799823782848983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826011521836997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8325826011524665664
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,6 +3214,7 @@ GameObject:
   - component: {fileID: 8325826011533215887}
   - component: {fileID: 8325826011533215886}
   - component: {fileID: 8325826011533215873}
+  - component: {fileID: 2269119836286573659}
   m_Layer: 5
   m_Name: btn_xray3
   m_TagString: Untagged
@@ -3163,7 +3239,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 123.31, y: 245.86}
+  m_AnchoredPosition: {x: 123.31006, y: 245.86}
   m_SizeDelta: {x: 246.6225, y: 245.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8325826011533215887
@@ -3187,7 +3263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3260,10 +3336,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826011533215875}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2269119836286573659}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3272,6 +3348,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2269119836286573659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826011533215875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8325826011549554226
 GameObject:
   m_ObjectHideFlags: 0
@@ -3803,6 +3893,7 @@ GameObject:
   - component: {fileID: 8325826012017755315}
   - component: {fileID: 8325826012017755314}
   - component: {fileID: 8325826012017755317}
+  - component: {fileID: 4148488605994822794}
   m_Layer: 5
   m_Name: btn_xray1
   m_TagString: Untagged
@@ -3851,7 +3942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3924,10 +4015,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826012017755319}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 4148488605994822794}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3936,6 +4027,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4148488605994822794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826012017755319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8325826012020772579
 GameObject:
   m_ObjectHideFlags: 0
@@ -4159,6 +4264,7 @@ GameObject:
   - component: {fileID: 8325826012182901405}
   - component: {fileID: 8325826012182901404}
   - component: {fileID: 8325826012182901407}
+  - component: {fileID: 3314679567322101855}
   m_Layer: 5
   m_Name: btn_xray2
   m_TagString: Untagged
@@ -4207,7 +4313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4280,10 +4386,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826012182901393}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 3314679567322101855}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4292,6 +4398,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3314679567322101855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826012182901393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8325826012290090212
 GameObject:
   m_ObjectHideFlags: 0
@@ -4801,6 +4921,7 @@ GameObject:
   - component: {fileID: 8325826012564200845}
   - component: {fileID: 8325826012564200844}
   - component: {fileID: 8325826012564200847}
+  - component: {fileID: 21911945877365986}
   m_Layer: 5
   m_Name: btn_xray2
   m_TagString: Untagged
@@ -4849,7 +4970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4922,10 +5043,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826012564200833}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 21911945877365986}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4934,6 +5055,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &21911945877365986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826012564200833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8325826012602129144
 GameObject:
   m_ObjectHideFlags: 0
@@ -5091,6 +5226,7 @@ GameObject:
   - component: {fileID: 8325826012615336266}
   - component: {fileID: 8325826012615336269}
   - component: {fileID: 8325826012615336268}
+  - component: {fileID: 8979226237285910901}
   m_Layer: 5
   m_Name: btn_xray4
   m_TagString: Untagged
@@ -5139,7 +5275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5212,10 +5348,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826012615336270}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 8979226237285910901}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5224,6 +5360,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8979226237285910901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826012615336270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8325826012653305958
 GameObject:
   m_ObjectHideFlags: 0
@@ -5371,6 +5521,7 @@ GameObject:
   - component: {fileID: 8325826012700937994}
   - component: {fileID: 8325826012700937997}
   - component: {fileID: 8325826012700937996}
+  - component: {fileID: 6647382753341452187}
   m_Layer: 5
   m_Name: btn_xray3
   m_TagString: Untagged
@@ -5419,7 +5570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5492,10 +5643,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826012700937998}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 6647382753341452187}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5504,6 +5655,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6647382753341452187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826012700937998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8325826012746345425
 GameObject:
   m_ObjectHideFlags: 0
@@ -5516,6 +5681,7 @@ GameObject:
   - component: {fileID: 8325826012746345437}
   - component: {fileID: 8325826012746345436}
   - component: {fileID: 8325826012746345439}
+  - component: {fileID: 2368614515003803550}
   m_Layer: 5
   m_Name: btn_xray1
   m_TagString: Untagged
@@ -5564,7 +5730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08114985, g: 0.10021546, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5637,10 +5803,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8325826012746345425}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2368614515003803550}
+        m_TargetAssemblyTypeName: ShrinkAnim, Assembly-CSharp
+        m_MethodName: ShrinkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5649,6 +5815,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2368614515003803550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325826012746345425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08ac79fc89c684448e069df2eaca4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmnt: 1.1
+  duration: 0.8
 --- !u!1 &8393924658009397420
 GameObject:
   m_ObjectHideFlags: 0
