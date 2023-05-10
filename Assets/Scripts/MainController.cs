@@ -45,6 +45,7 @@ public class MainController : MonoBehaviour
     [Header("Sample Test Image GameObjects")]
     public SampleTestController sampleTestLocations;
 
+
     int index = 0;
     IDictionary<string, RectTransform> locations = new Dictionary<string, RectTransform>();
     public int score = 0;

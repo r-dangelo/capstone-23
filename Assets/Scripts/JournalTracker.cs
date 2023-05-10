@@ -28,6 +28,10 @@ public class JournalTracker : MonoBehaviour
     public float decapoda = 0f;
     [HideInInspector]
     public float carnivora = 0f;
+    [HideInInspector]
+    public float cat = 0f;
+    [HideInInspector]
+    public float birdy = 0f;
 
     [Header("UI Bars Inner")]
     [SerializeField] Image img_anamalia;
@@ -40,8 +44,12 @@ public class JournalTracker : MonoBehaviour
     [SerializeField] Image img_malacostraca;
     [SerializeField] Image img_decapoda;
     [SerializeField] Image img_carnivora;
+    [SerializeField] Image img_cat;
+    [SerializeField] Image img_birdy;
 
-    public void addKingdom(float amount, int kingdomSeeEnum)
+    float amount = 0.1f;
+
+    public void addKingdom(int kingdomSeeEnum)
     {
         switch (kingdomSeeEnum) {
             case 0:
@@ -55,7 +63,7 @@ public class JournalTracker : MonoBehaviour
         }
     }
 
-    public void addPhylum(float amount, int phylumSeeEnum)
+    public void addPhylum(int phylumSeeEnum)
     {
         switch(phylumSeeEnum) {
             case 0:
@@ -69,7 +77,7 @@ public class JournalTracker : MonoBehaviour
         }
     }
 
-    public void addClass(float amount, int classSeeEnum)
+    public void addClass(int classSeeEnum)
     {
         switch(classSeeEnum) {
             case 0:
@@ -91,16 +99,20 @@ public class JournalTracker : MonoBehaviour
         }
     }
 
-    public void addOrder(float amount, int orderSeeEnum)
+    public void addOrder(int orderSeeEnum)
     {
         switch (orderSeeEnum) {
             case 0:
-                decapoda += amount;
-                img_decapoda.fillAmount = decapoda;
-                break;
-            case 1:
                 carnivora += amount;
                 img_carnivora.fillAmount = carnivora;
+                break;
+            case 1:
+                cat += amount;
+                img_cat.fillAmount = cat;
+                break;
+            case 2:
+                birdy += amount;
+                img_birdy.fillAmount = birdy;
                 break;
         }
     }
