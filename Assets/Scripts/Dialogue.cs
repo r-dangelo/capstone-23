@@ -16,6 +16,8 @@ public class Dialogue : MonoBehaviour
     [SerializeField] TextMeshProUGUI microDialogue;
     [SerializeField] TextMeshProUGUI soundDialogue;
     [SerializeField] TextMeshProUGUI xrayDialog;
+    [SerializeField] TextMeshProUGUI xrayLeftDia;
+    [SerializeField] TextMeshProUGUI sampleLeftDia;
 
     int mainIndex = 0;
     bool introComplete = false;
@@ -58,4 +60,13 @@ public class Dialogue : MonoBehaviour
         xrayDialog.text = dialogue;
     }
 
+    public void setXRayLeftGuide(string dialogue)
+    {
+        xrayLeftDia.text += dialogue + "\n \n";
+    }
+
+    public void setMicroLeftDia(string dialogue)
+    {
+        sampleLeftDia.text += dialogue + "\n \n";
+    }
 }

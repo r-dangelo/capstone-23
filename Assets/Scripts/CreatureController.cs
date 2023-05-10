@@ -168,12 +168,14 @@ public class CreatureController : MonoBehaviour
         if (!sampleTestComplete) {
             if (buttonNumber == 1 && sampleTest.isTopSampleCorrect) {
                 controller.gameObject.GetComponent<Dialogue>().setMicroDialogue(sampleTest.correct);
+                controller.gameObject.GetComponent<Dialogue>().setMicroLeftDia("These samples match.");
                 // If I were to do this properly, instead of passing 0 or 1, I would pass the
                 // same as whatever the creature is.
                 controller.gameObject.GetComponent<JournalTracker>().addKingdom(0);
             }
             else {
                 controller.gameObject.GetComponent<Dialogue>().setMicroDialogue(sampleTest.incorrect);
+                controller.gameObject.GetComponent<Dialogue>().setMicroLeftDia("I think this matches?");
                 controller.gameObject.GetComponent<JournalTracker>().addKingdom(1);
             }
         }
