@@ -11,7 +11,7 @@ public class WigglyAnim : MonoBehaviour
     [SerializeField] public float yDist;
     [SerializeField] public float duration;
 
-    public void Awake()
+    public void OnEnable()
     {
         Wiggle();
     }

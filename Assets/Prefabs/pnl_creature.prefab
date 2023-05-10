@@ -116,7 +116,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -324.5}
-  m_SizeDelta: {x: 892, y: 649}
+  m_SizeDelta: {x: 949, y: 649}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &4474545353256713522
 CanvasRenderer:
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2d4062fa7afc67d4ba169f675496cb85, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3075a978aa722b045b8c3dd28435f89c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -234,22 +234,17 @@ MonoBehaviour:
     frequency2Reaction: 1
     positiveReaction: {fileID: 21300000, guid: bb0ea722c11be5244b7cd2269ba3f230, type: 3}
     negativeReaction: {fileID: 21300000, guid: eef978d02acb3304abc4ed72498cfc63, type: 3}
+    positiveDia: 
+    negativeDia: 
+    neutralDia: 
   xRayTest:
     hasExoskeleton: 0
     ImportantSections: []
   sampleTest:
-  - controlImage: {fileID: 21300000, guid: e102f5fdc2247e443ab8dc3402ae6585, type: 3}
-    topImage: {fileID: 21300000, guid: 0ba1ac55b008af44381565010f75eafa, type: 3}
-    bottomImage: {fileID: 21300000, guid: 98bf94cb84504f7448b627cd67c2434f, type: 3}
-    isTopImageCorrect: 0
-  - controlImage: {fileID: 21300000, guid: e102f5fdc2247e443ab8dc3402ae6585, type: 3}
-    topImage: {fileID: 21300000, guid: 98bf94cb84504f7448b627cd67c2434f, type: 3}
-    bottomImage: {fileID: 21300000, guid: 0ba1ac55b008af44381565010f75eafa, type: 3}
-    isTopImageCorrect: 1
-  - controlImage: {fileID: 21300000, guid: e102f5fdc2247e443ab8dc3402ae6585, type: 3}
-    topImage: {fileID: 21300000, guid: 0ba1ac55b008af44381565010f75eafa, type: 3}
-    bottomImage: {fileID: 21300000, guid: 98bf94cb84504f7448b627cd67c2434f, type: 3}
-    isTopImageCorrect: 0
+    correct: 
+    incorrect: 
+    sampleTestComplete: 
+    isTopSampleCorrect: 0
   petSound: {fileID: 0}
   controller: {fileID: 0}
 --- !u!114 &5295454206543309093
