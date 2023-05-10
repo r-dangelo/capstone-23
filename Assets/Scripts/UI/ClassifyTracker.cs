@@ -78,7 +78,7 @@ public class ClassifyTracker : MonoBehaviour
 
     public void RefreshTree()
     {
-        classifyBtn.SetActive(false);
+        //classifyBtn.SetActive(false);
         //Debug.Log("refresh");
         if(kingdomTog.isOn)
         {

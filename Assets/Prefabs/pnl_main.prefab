@@ -1758,7 +1758,6 @@ GameObject:
   - component: {fileID: 8442465414760090127}
   - component: {fileID: 3310417628211493844}
   - component: {fileID: 8097414958086572338}
-  - component: {fileID: 7406814364675343936}
   m_Layer: 5
   m_Name: tog_classifyTree
   m_TagString: Untagged
@@ -1922,6 +1921,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayUISounds, Assembly-CSharp
+        m_MethodName: playSelectSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!114 &8097414958086572338
 MonoBehaviour:
@@ -1960,24 +1971,6 @@ MonoBehaviour:
   - {fileID: 1022568609404865627}
   - {fileID: 7340940669922255659}
   classifyBtn: {fileID: 8315285849412693519}
---- !u!114 &7406814364675343936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618630445589551914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60922adb666c50b47ada9f807c5f23a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseXScale: 1
-  baseYScale: 1
-  xScale: 1.05
-  yScale: 1.1
-  yDist: 0
-  duration: 1
 --- !u!1 &651819387419403728
 GameObject:
   m_ObjectHideFlags: 0
@@ -6378,6 +6371,7 @@ GameObject:
   - component: {fileID: 7228178420699218108}
   - component: {fileID: 3928861640175646930}
   - component: {fileID: 1993684062022676734}
+  - component: {fileID: 5064997568632432513}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -6444,6 +6438,24 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5064997568632432513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973125406079797707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60922adb666c50b47ada9f807c5f23a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseXScale: 1
+  baseYScale: 1
+  xScale: 1.05
+  yScale: 1.1
+  yDist: 0
+  duration: 1
 --- !u!1 &2010830405207889594
 GameObject:
   m_ObjectHideFlags: 0
@@ -28804,7 +28816,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 21300000, guid: bef7d83ff9d7b384d83c0bf554024ceb, type: 3}
     m_SelectedSprite: {fileID: 21300000, guid: bef7d83ff9d7b384d83c0bf554024ceb, type: 3}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 21300000, guid: bef7d83ff9d7b384d83c0bf554024ceb, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted

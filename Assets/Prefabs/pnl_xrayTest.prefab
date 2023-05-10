@@ -1856,7 +1856,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Test instructions
+  m_text: To use the test, click the squares to reveal the hidden image. Once the
+    squares are gone, the full skeleton will be revealed. Pay attention to what Jun
+    says, she has important insight!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b5bb311b4b8b1914c9197f3c9a7a985f, type: 2}
   m_sharedMaterial: {fileID: 6313484031347700595, guid: b5bb311b4b8b1914c9197f3c9a7a985f, type: 2}
