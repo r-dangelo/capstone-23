@@ -2689,6 +2689,7 @@ GameObject:
   - component: {fileID: 5092545675778492130}
   - component: {fileID: 5092545675778492157}
   - component: {fileID: 5092545675778492156}
+  - component: {fileID: 3196301091756916864}
   m_Layer: 5
   m_Name: btn_soundReturn
   m_TagString: Untagged
@@ -2811,6 +2812,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &3196301091756916864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092545675778492158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60922adb666c50b47ada9f807c5f23a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseXScale: 1
+  baseYScale: 1
+  xScale: 1.02
+  yScale: 1.05
+  yDist: 0
+  duration: 1
 --- !u!1 &5092545675891850061
 GameObject:
   m_ObjectHideFlags: 0
@@ -3473,6 +3492,7 @@ GameObject:
   - component: {fileID: 5092545676199350312}
   - component: {fileID: 5092545676199350315}
   - component: {fileID: 7744186094259288874}
+  - component: {fileID: 2331652205744452796}
   m_Layer: 5
   m_Name: btn_guide
   m_TagString: Untagged
@@ -3625,6 +3645,24 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 0
+--- !u!114 &2331652205744452796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092545676199350308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60922adb666c50b47ada9f807c5f23a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseXScale: 1
+  baseYScale: 1
+  xScale: 1.02
+  yScale: 1.05
+  yDist: 0
+  duration: 1
 --- !u!1 &5092545676214314860
 GameObject:
   m_ObjectHideFlags: 0
@@ -4521,6 +4559,7 @@ GameObject:
   - component: {fileID: 5092545676948834767}
   - component: {fileID: 5092545676948834766}
   - component: {fileID: 4099335312481639097}
+  - component: {fileID: 8988867876373702938}
   m_Layer: 5
   m_Name: btn_testSound2
   m_TagString: Untagged
@@ -4694,6 +4733,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animParent: {fileID: 5092545676270053353}
+--- !u!114 &8988867876373702938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092545676948834763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60922adb666c50b47ada9f807c5f23a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseXScale: 1
+  baseYScale: 1
+  xScale: 1.02
+  yScale: 1.05
+  yDist: 0
+  duration: 1
 --- !u!1 &5092545676975413604
 GameObject:
   m_ObjectHideFlags: 0
@@ -5675,6 +5732,7 @@ GameObject:
   - component: {fileID: 5092545677208814118}
   - component: {fileID: 5092545677208814113}
   - component: {fileID: 5942600831090543433}
+  - component: {fileID: 7089958619319009405}
   m_Layer: 5
   m_Name: btn_testData
   m_TagString: Untagged
@@ -5827,6 +5885,24 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!114 &7089958619319009405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092545677208814114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60922adb666c50b47ada9f807c5f23a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseXScale: 1
+  baseYScale: 1
+  xScale: 1.02
+  yScale: 1.05
+  yDist: 0
+  duration: 1
 --- !u!1 &5092545677271261005
 GameObject:
   m_ObjectHideFlags: 0
@@ -6166,6 +6242,7 @@ GameObject:
   - component: {fileID: 5092545677486088494}
   - component: {fileID: 5092545677486088493}
   - component: {fileID: 1675655014879538100}
+  - component: {fileID: 2240261546605138118}
   m_Layer: 5
   m_Name: btn_testSound
   m_TagString: Untagged
@@ -6339,6 +6416,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animParent: {fileID: 5092545676270053353}
+--- !u!114 &2240261546605138118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092545677486088488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60922adb666c50b47ada9f807c5f23a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseXScale: 1
+  baseYScale: 1
+  xScale: 1.02
+  yScale: 1.05
+  yDist: 0
+  duration: 1
 --- !u!1 &5092545677681475841
 GameObject:
   m_ObjectHideFlags: 0

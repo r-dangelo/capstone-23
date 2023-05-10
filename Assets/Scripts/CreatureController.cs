@@ -22,7 +22,7 @@ public enum classes{
     Mammalia, Reptilia, Arachnida, Crusty, FungiClass
 }
 public enum orders{
-    Carnivora, Cat, Birdy, RepDecoy, Arachnida1, Arachnida2, Crusty1, Crusty2, FungiOrd
+    Carnivora, Felijadia, Birdy, RepDecoy, Arachnida1, Arachnida2, Crusty1, Crusty2, FungiOrd
 }
 
 [System.Serializable]
